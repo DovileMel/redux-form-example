@@ -1,14 +1,14 @@
 // @flow
-import React from 'react'
-import Page from '../Page'
-import styled, { css } from 'styled-components'
-import DemoForm from '../components/Form'
+import React from "react";
+import Page from "../Page";
+import styled, { css } from "styled-components";
+import Form from "../components/Form";
 
 export default Page(() =>
   <App>
-    <DemoForm />
+    <Form/>
   </App>
-)
+);
 
 const icon = css`
   display: inline-block;
@@ -17,27 +17,27 @@ const icon = css`
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-`
+`;
 
 const paperPlane = css`
   ${icon}
   content: '\f1d8';
-`
+`;
 
 const plus = css`
   ${icon}
   content: '\f067';
-`
+`;
 
 const trash = css`
   ${icon}
   content: '\f1f8';
-`
+`;
 
 const exclamation = css`
   ${icon}
   content: '\f06a';
-`
+`;
 
 const btn = (light, dark) => css`
   white-space: nowrap;
@@ -64,14 +64,14 @@ const btn = (light, dark) => css`
     opacity: 0.6;
     cursor: not-allowed;
   }
-`
+`;
 
 const btnDefault = css`
-  ${btn('#ffffff', '#d5d5d5')}
+  ${btn("#ffffff", "#d5d5d5")}
   color: #555;
-`
+`;
 
-const btnPrimary = btn('#4f93ce', '#285f8f')
+const btnPrimary = btn("#4f93ce", "#285f8f");
 
 const App = styled.div`
   padding: 20px;
@@ -141,4 +141,4 @@ const App = styled.div`
       }
     }
   }
-`
+`;
