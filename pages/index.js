@@ -2,7 +2,7 @@
 import React from 'react'
 import Page from '../Page'
 import styled, { css } from 'styled-components'
-import DemoForm from '../components/DemoForm'
+import DemoForm from '../components/Form'
 
 export default Page(() =>
   <App>
